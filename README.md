@@ -1,6 +1,6 @@
 # Live2D
 &emsp;&emsp;为安卓端Chrome内核浏览器适配的Live2D看板娘插件，可应用于[via](https://viayoo.com/zh-cn/)等可调用js插件或编辑首页Html的浏览器。
-- 源码基于 [live2d_demo / ©journey-ad / GPL v2.0](https://github.com/fghrsh/live2d_demo) 修改
+- 源码基于 [live2d_demo / ©fghrsh / GPL v2.0](https://github.com/fghrsh/live2d_demo) 修改
 - 所有资源和库文件封装到一个js，牺牲了部分定制性，换取更快的加载速度以及更稳定的体验。
 
 *<p align="right">Customized by Sky.</p>*
@@ -13,38 +13,27 @@
 /*
  * @name: 看板娘
  * @Author: Sky
- * @version: 1.3
+ * @version: 1.8
  * @description: 愿你每天好心情
  * @include: *
  * @createTime: 2020-5-9 21:00
- * @updateTime: 2020-5-20 17:30
+ * @updateTime: 2020-8-21 10:40
  */
-(function(){
- const key = encodeURIComponent('看板娘:执行判断');
- if(window[key] || navigator.connection.type != 'wifi'){return;}
- try {
-  window[key] = true;
-
+(function(){const w = window;
 /*以下参数可修改，=null表示恢复默认值*/
-window.kbn_setting0=6, /*人物ID*/
-window.kbn_setting1=19, /*衣服ID*/
-window.kbn_setting2=true, /*是否显示关闭按钮*/
-window.kbn_setting3='180x170', /*看板娘大小*/
-window.kbn_setting4='right:10', /*停靠侧:到侧边距离*/
-window.kbn_setting5='160x50', /*提示框大小*/
-window.kbn_setting6='14px', /*提示框字体大小*/
-window.kbn_setting7='-13px', /*提示框Y轴偏移*/
-window.kbn_setting8='18px', /*工具栏图标大小*/
-window.kbn_setting9='36px', /*工具栏行高*/
-window.kbn_setting10=null; /*一言API可选'fghrsh.net', 'hitokoto.cn', 'jinrishici.com'(古诗词)*/
+w.kbn_setting0=6; /*人物ID*/
+w.kbn_setting1=19; /*衣服ID*/
+w.kbn_setting2=true; /*是否显示关闭按钮*/
+w.kbn_setting3='180x170'; /*看板娘大小*/
+w.kbn_setting4='right:10'; /*停靠侧:到侧边距离*/
+w.kbn_setting5='160x50'; /*提示框大小*/
+w.kbn_setting6='14px'; /*提示框字体大小*/
+w.kbn_setting7='-13px'; /*提示框Y轴偏移*/
+w.kbn_setting8='18px'; /*工具栏图标大小*/
+w.kbn_setting9='36px'; /*工具栏行高*/
+w.kbn_setting10=null; /*一言API可选'fghrsh.net', 'hitokoto.cn', 'jinrishici.com'(古诗词)*/
 /*－－－－以下勿改－－－－*/
-
-  const lib = document.createElement('script');
-  lib.src = 'https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.3/kbn.js';
-  lib.defer = true;
-  document.body.append(lib);
- } catch(err){console.log('看板娘：', err);}
-})();
+const key=encodeURIComponent('看板娘:执行判断');if(w[key]||navigator.connection.type!='wifi'){return;}try{w[key]=true;const lib=document.createElement('script');lib.src='https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.8/kbn.js';lib.defer=true;document.body.append(lib);}catch(err){console.log('看板娘：',err);}})();
 ```
 ## 脚本作用：
 &emsp;&emsp;纯粹娱乐向的一个脚本——在您浏览的网页添加一个**看板娘**~ 为您的浏览体验增加一分乐趣！（现在，您可以在脚本代码中的指定区域对个性化参数进行修改！）
@@ -57,7 +46,7 @@ window.kbn_setting10=null; /*一言API可选'fghrsh.net', 'hitokoto.cn', 'jinris
 <img src="https://i.loli.net/2020/05/09/9eCqx7MHbohdfJ8.jpg"  alt="使用效果" height="600"></img>
 ## 更多玩法：
 &emsp;&emsp;您可以在 via设置-定制-Logo-Html代码 中，填入<br>
-`<script src="https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.3/kbn.js" defer></script>`<br>
+`<script src="https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.8/kbn.js" defer></script>`<br>
 然后，看板娘就能在via首页中陪伴您了~（或者可以把整段脚本代码复制到`<script> </script>`之间填入，这样既可以对参数进行个性化定制，又能使之仅在使用wifi时生效以节省流量）  <br>
 <img src="https://i.loli.net/2020/05/10/FWcanCAZbRE2kjd.jpg"  alt="首页看板娘" height="600"></img>
 ## 可能存在的BUG：
