@@ -13,14 +13,15 @@
 /*
  * @name: 看板娘
  * @Author: Sky
- * @version: 1.8
+ * @version: 1.9
  * @description: 愿你每天好心情
  * @include: *
  * @createTime: 2020-5-9 21:00
- * @updateTime: 2020-8-21 10:40
+ * @updateTime: 2021-4-2 0:30
  */
-(function(){const w = window;
+(function(){const w = window,
 /*以下参数可修改，=null表示恢复默认值*/
+onlyWifi=1; /*仅在Wifi环境运行*/
 w.kbn_setting0=6; /*人物ID*/
 w.kbn_setting1=19; /*衣服ID*/
 w.kbn_setting2=true; /*是否显示关闭按钮*/
@@ -33,7 +34,7 @@ w.kbn_setting8='18px'; /*工具栏图标大小*/
 w.kbn_setting9='36px'; /*工具栏行高*/
 w.kbn_setting10=null; /*一言API可选'fghrsh.net', 'hitokoto.cn', 'jinrishici.com'(古诗词)*/
 /*－－－－以下勿改－－－－*/
-const key=encodeURIComponent('看板娘:执行判断');if(w[key]||navigator.connection.type!='wifi'){return;}try{w[key]=true;const lib=document.createElement('script');lib.src='https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.8/kbn.js';lib.defer=true;document.body.append(lib);}catch(err){console.log('看板娘：',err);}})();
+const key=encodeURIComponent('看板娘:执行判断');if(w[key]||(onlyWifi&&navigator.connection.type!='wifi')){return;}try{w[key]=true;const lib=document.createElement('script');lib.src='https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.9/kbn.js';lib.defer=true;document.body.append(lib);}catch(err){console.log('看板娘：',err);}})();
 ```
 ## 脚本作用：
 &emsp;&emsp;纯粹娱乐向的一个脚本——在您浏览的网页添加一个**看板娘**~ 为您的浏览体验增加一分乐趣！（现在，您可以在脚本代码中的指定区域对个性化参数进行修改！）
@@ -46,7 +47,7 @@ const key=encodeURIComponent('看板娘:执行判断');if(w[key]||navigator.conn
 <img src="https://i.loli.net/2020/05/09/9eCqx7MHbohdfJ8.jpg"  alt="使用效果" height="600"></img>
 ## 更多玩法：
 &emsp;&emsp;您可以在 via设置-定制-Logo-Html代码 中，填入<br>
-`<script src="https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.8/kbn.js" defer></script>`<br>
+`<script src="https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.9/kbn.js" defer></script>`<br>
 然后，看板娘就能在via首页中陪伴您了~（或者可以把整段脚本代码复制到`<script> </script>`之间填入，这样既可以对参数进行个性化定制，又能使之仅在使用wifi时生效以节省流量）  <br>
 <img src="https://i.loli.net/2020/05/10/FWcanCAZbRE2kjd.jpg"  alt="首页看板娘" height="600"></img>
 ## 可能存在的BUG：
