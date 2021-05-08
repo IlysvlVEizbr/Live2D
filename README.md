@@ -13,11 +13,11 @@
 /*
  * @name: 看板娘
  * @Author: Sky
- * @version: 1.9
+ * @version: 1.9.2
  * @description: 愿你每天好心情
  * @include: *
  * @createTime: 2020-5-9 21:00
- * @updateTime: 2021-4-2 0:30
+ * @updateTime: 2021-5-9 3:50
  */
 (function(){const w = window,
 /*以下参数可修改，=null表示恢复默认值*/
@@ -34,7 +34,7 @@ w.kbn_setting8='18px'; /*工具栏图标大小*/
 w.kbn_setting9='36px'; /*工具栏行高*/
 w.kbn_setting10=null; /*一言API可选'fghrsh.net', 'hitokoto.cn', 'jinrishici.com'(古诗词)*/
 /*－－－－以下勿改－－－－*/
-const key=encodeURIComponent('看板娘:执行判断');if(w[key]||(onlyWifi&&navigator.connection.type!='wifi')){return;}try{w[key]=true;const lib=document.createElement('script');lib.src='https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.9/kbn.js';lib.defer=true;document.body.append(lib);}catch(err){console.log('看板娘：',err);}})();
+const key=encodeURIComponent('看板娘:执行判断');if(w[key]||(!(onlyWifi==false)&&navigator.connection.type!='wifi')){return;}try{w[key]=true;const lib=document.createElement('script');lib.src='https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.9/kbn.js';lib.defer=true;document.body.append(lib);}catch(err){console.log('看板娘：',err);}})();
 ```
 ## 脚本作用：
 &emsp;&emsp;纯粹娱乐向的一个脚本——在您浏览的网页添加一个**看板娘**~ 为您的浏览体验增加一分乐趣！（现在，您可以在脚本代码中的指定区域对个性化参数进行修改！）
