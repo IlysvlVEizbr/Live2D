@@ -21,7 +21,7 @@
  */
 (function(){const w = window,
 /*以下参数可修改，=null表示恢复默认值*/
-onlyWifi=1; /*仅在Wifi环境运行*/
+onlyWifi=true; /*仅在Wifi环境运行*/
 w.kbn_setting0=6; /*人物ID*/
 w.kbn_setting1=19; /*衣服ID*/
 w.kbn_setting2=true; /*是否显示关闭按钮*/
