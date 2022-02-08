@@ -52,6 +52,7 @@ const key=encodeURIComponent('看板娘:执行判断');if(w[key]||(!(onlyWifi==f
 <img src="https://i.loli.net/2020/05/10/FWcanCAZbRE2kjd.jpg"  alt="首页看板娘" height="600"></img>
 ## 可能存在的BUG：
 &emsp;&emsp;点击"关闭看板娘"按钮后，可能会导致**浏览器卡死**！暂时未探明原因，若遇到该问题建议通过删除脚本并刷新的方式关闭。
+&emsp;&emsp;部分分辨率较低设备可能会出现发言气泡显示内容不全的问题，若出现此问题可以修改脚本开头的`w.kbn_setting5`参数，把气泡改大。
 ## 免责声明：
 - 此插件仅适用于个人技术研究学习，请勿商用。
 - 出现任何法律纠纷，与作者无关。
