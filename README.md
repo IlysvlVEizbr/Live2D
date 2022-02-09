@@ -47,7 +47,7 @@ const key=encodeURIComponent('看板娘:执行判断');if(w[key]||(!(onlyWifi==f
 <img src="https://i.loli.net/2020/05/09/9eCqx7MHbohdfJ8.jpg"  alt="使用效果" height="600"></img>
 ## 更多玩法：
 &emsp;&emsp;您可以在 via设置-定制-Logo-Html代码 中，填入<br>
-`<script src="https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@1.9/kbn.js" defer></script>`<br>
+`<script src="https://cdn.jsdelivr.net/gh/IlysvlVEizbr/Live2D@2.0/kbn.js" defer></script>`<br>
 然后，看板娘就能在via首页中陪伴您了~（或者可以把整段脚本代码复制到`<script> </script>`之间填入，这样既可以对参数进行个性化定制，又能使之仅在使用wifi时生效以节省流量）<br>
 <img src="https://i.loli.net/2020/05/10/FWcanCAZbRE2kjd.jpg"  alt="首页看板娘" height="600"></img>
 ## 可能存在的BUG：
